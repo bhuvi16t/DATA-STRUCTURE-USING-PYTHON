@@ -82,3 +82,45 @@ rect1=Rectangle(6,5)
 rect1.setDimensions(4,2)
 rect1.showDimensions()
 rect1.showArea()
+
+# 4. Define a class Book with instance object variables bookid, title and price. 
+# Initialise them via_init__() method. Also define method to show book variables.
+
+
+class Book:
+    def __init__(self, bookid, title, price):
+        self.bookid = bookid
+        self.title = title
+        self.price = price
+
+    def show_details(self):
+        print(f"Book ID: {self.bookid}")
+        print(f"Title: {self.title}")
+        print(f"Price: ${self.price}")
+
+# Example usage:
+book1 = Book(1, "Python Programming", 29.99)
+book1.show_details()
+
+# 5. Define a class Team with instance object variable a list of team member names. 
+# Provide methods to input member names and display member names.
+
+
+
+class Team:
+    def __init__(self):
+        self.members = []
+
+    def add_member(self, name):
+        self.members.append(name)
+
+    def display_members(self):
+        print("Team Members:")
+        for member in self.members:
+            print(f"- {member}")
+
+
+team = Team()
+team.add_member("Alice")
+team.add_member("Bob")
+team.display_members()
