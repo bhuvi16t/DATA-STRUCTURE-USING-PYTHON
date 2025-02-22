@@ -49,6 +49,22 @@ print(5 << 4)
 
 
 
+def is_even(n):
+    return (n & 1) == 0  # Returns True if even
+
+print(is_even(5))  # False (odd)
+print(is_even(8))  # True (even)
+
+
+
+a, b = 5, 3
+a = a ^ b
+b = a ^ b
+a = a ^ b
+print(a, b)  # Output: 3, 5
+
+
+
 
  
 
